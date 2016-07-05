@@ -1,10 +1,89 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Nos casamos</title>
-  </head>
-  <body>
-    <h1>Nos casamos</h1>
-  </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link href="img/favicon.png" rel="icon" type="image/png"/>
+  <title>Nos Casamos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link href='https://fonts.googleapis.com/css?family=Pompiere' rel='stylesheet' type='text/css'><link rel="stylesheet" href="./css/style.css">
+  <script src="js/script.js" type="text/javascript" defer>
+
+  </script>
+</head>
+
+
+
+<body>
+  <div id="background"></div>
+  <div id="txt_wrapper">
+    <div id="txt_analia">
+      ANALIA
+    </div>
+    <div id="txt_y">
+      y
+    </div>
+    <div id="txt_daniel">
+      DANIEL
+    </div>
+    <div id="txt_links">
+      <a id="a_civil" href="#" title="Ver Información">Civil</a> | <a id="a_brindis" href="#" title="Ver Información">Brindis</a> | <a href="https://goo.gl/photos/iyDyVw71KYa1r3s7A" target="_blank" title="Ir a Google Photos">Fotos</a>
+    </div>
+  </div>
+
+
+  <div id="civil" class="pop-up">
+    <p>
+      Registro Civil de Montevideo
+    </p>
+    <p>
+      Fecha a confirmar
+      <!-- Viernes 24 de Febrero de 2017 -->
+    </p>
+    <p>
+      Hora a confirmar
+      <!-- 16:00 hrs. -->
+    </p>
+  </div>
+
+
+  <div id="brindis" class="pop-up">
+    <p>
+      Después del <b>"SI, QUIERO"</b>
+    </p>
+    <p>
+      festejamos por ahí
+    </p>
+    <p>
+      <i>Direccion a confirmar</i>
+    </p>
+  </div>
+
+  <div id="pop_up_background"></div>
+
+</body>
+
+
+
+<!-- <script src="/socket.io/socket.io.js"></script>
+<script>
+var socket = io();
+socket.on('unOrderedGuests', function (unOrderedGuests) {
+renderList(unOrderedGuests);
+});
+function renderList(guests){
+var list_box = document.getElementById('guests_list');
+var list = '<ul>';
+console.log(guests.guests[1].confirmed);
+for(var i=0; i < guests.guests.length; i++){
+list +=
+'<li>' +
+guests.guests[i].name + ' ' +
+guests.guests[i].lastName + ' - ' +
+(guests.guests[i].confirmed == 1 ? '<small>Asistirá</small>' : '<small>No ha confirmado</small>') +
+'</li>'
+}
+list += '</ul>';
+list_box.innerHTML = list;
+}
+</script> -->
 </html>

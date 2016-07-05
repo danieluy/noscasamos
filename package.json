@@ -8,11 +8,11 @@
     "start": "node app.js"
   },
   "author": "danielsosa.dev@gmail.com",
-  "license": "MIT",
   "license": "ISC",
   "dependencies": {
     "ejs": "^2.4.2",
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "socket.io": "^1.4.8"
   },
   "repository": {
     "type": "git",
