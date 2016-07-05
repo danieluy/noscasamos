@@ -4,7 +4,7 @@ html, *{
   box-sizing: border-box;
 }
 body, *{
-  font-family: 'Pompiere', cursive;
+  font-family: 'Pompiere', Verdana, sans-serif;
 }
 #background{
   width: 100%;
@@ -85,7 +85,7 @@ div.pop-up p{
   line-height: 2.5em;
 }
 /*div.pop-up p b{
-  color: #FF3333;
+color: #FF3333;
 }*/
 div#pop_up_background{
   position: fixed;
@@ -102,4 +102,39 @@ div#pop_up_background{
 div#pop_up_background.show-back{
   pointer-events: auto;
   opacity: 1;
+}
+
+
+/*Large devices Desktops (≥1200px)########################################################################################################################*/
+/*@media screen and (min-width: 1200px){}*/
+
+
+
+/*Medium devices Desktops (≥992px)########################################################################################################################*/
+/*@media screen and (min-width: 992px) and (max-width: 1199px){}*/
+
+
+
+/*Small devices Tablets (≥768px)########################################################################################################################*/
+/*@media screen and (min-width: 768px){}*/
+
+
+
+/*Extra small devices Phones  (<768px)########################################################################################################################*/
+@media screen and (max-width: 767px){
+  #background{
+    background-position: auto;
+  }
+  div#txt_wrapper{
+    width: 100%;
+    padding: 5vh 0;
+  }
+  div#txt_links{
+    margin-top: 52vh;
+    font-size: 7.5vh;
+    color: #FFFFFF;
+  }
+  div#txt_links a{
+    color: #FFFFFF;
+  }
 }
