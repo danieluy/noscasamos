@@ -103,7 +103,11 @@ div#pop_up_background.show-back{
   pointer-events: auto;
   opacity: 1;
 }
-
+.pop-up a{
+  color: #000000;
+  text-decoration: none;
+  font-style: italic;
+}
 
 /*Large devices Desktops (≥1200px)########################################################################################################################*/
 /*@media screen and (min-width: 1200px){}*/
